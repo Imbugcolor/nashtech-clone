@@ -1,0 +1,144 @@
+.insights {
+  margin-top: 130px;
+  padding-bottom: 50px;
+}
+
+.insightItem {
+  margin: 15px 0;
+}
+
+.headingTitle h3 {
+  font-size: 48px;
+}
+
+.headingInsight {
+  margin-bottom: 50px;
+}
+
+.exploreMore {
+    position: relative;
+}
+
+.exploreMore {
+    padding-bottom: 10px;
+    color: #63666b;
+    font-weight: bold;
+}
+
+.exploreMore h4 {
+    margin-right: 15px;
+}
+
+.exploreMore::before {
+    background: #d6001c;
+    content: "";
+    display: block !important;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s;
+}
+
+.insightImage {
+  position: relative;
+  overflow: hidden; /* Ensures the zoomed element doesn't overflow its container */
+  display: inline-block; /* For controlling image size within container */
+}
+
+.insightImage img {
+  min-height: 225px;
+  object-fit: cover;
+}
+
+.insightImage img {
+  transition: transform 0.5s ease; /* Smooth transition for zoom */
+}
+
+.insightItem:hover .insightImage img {
+  transform: scale(1.1); /* Adjust scale as desired for zoom effect */
+}
+
+.insightImage::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(15, 15, 26, 0.2);
+  top: 0;
+  left: 0;
+}
+
+.insightItem:hover .insightImage::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(15, 15, 26, 0.5);
+  top: 0;
+  left: 0;
+}
+
+.insightDetail {
+  margin-top: 24px;
+}
+
+.insightTag {
+  color: #0094d5;
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.insightDescription {
+  font-size: 20px;
+  color: var(--e-global-color-astglobalcolor3);
+  font-weight: 700;
+  transition: transform 0.5s ease;
+}
+
+.insightItem:hover .insightDescription,
+.exploreMore:hover,
+.exploreMore:hover .exploreMore::before {
+  background: linear-gradient(270deg, #d6001c, #6a1f7a) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent;
+}
+.newsTag {
+  position: absolute;
+  bottom: 0;
+  left: 0;position: absolute;
+  bottom: 15px;
+  left: 15px;
+  background: #fff;
+  z-index: 9;
+  padding: 5px;
+  padding-left: 26px;
+  color: #676767;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.tagText::after {
+  content: "";
+    position: absolute;
+    left: 0;
+    top: 1px;
+    width: 30px;
+    height: 100%;
+    background: url(https://www.nashtechglobal.com/wp-content/uploads/2023/10/download_icon.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(0) invert(.5);
+}
+
+@media (max-width: 768px) {
+    .headingTitle h3 {
+        font-size: 22px;
+    }
+    
+    .exploreMore {
+        font-size: 13px;
+    }
+}

@@ -1,0 +1,22 @@
+.gettingStarted {
+    background-image: url(https://www.nashtechglobal.com/wp-content/uploads/2023/05/Homepage_Call-to-action-section.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px 10px;
+    text-align: center;
+}
+
+.content {
+    padding: 70px 0;
+}
+
+.content h4 {
+    color: #fff;
+    font-size: 30px;
+    padding: 0 52px 30px 52px;
+}
+
+.content a {
+    display: inline-block;
+}

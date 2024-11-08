@@ -1,0 +1,44 @@
+.footer {
+  background-color: #000;
+  color: #fff;
+}
+
+.footerContainer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footerLogo svg {
+  height: 55px;
+  width: 55px;
+}
+
+.footerLogo svg path {
+  fill: #fff;
+}
+
+.newsletters h3 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.newsletters form input {
+  color: #9fa3aa;
+  background: #28292b;
+  padding: 10px;
+  border: 0px;
+  margin-bottom: 0;
+  font-size: 16px;
+  transition: 0.3s;
+  border-bottom: 2px solid transparent;
+}
+
+.newsletters form button {
+    width: 100%;
+    height: 50px;
+    padding: 0;
+    color: #fff;
+    background: #000;
+    border: 1px solid #fff;
+    margin-top: 30px;
+}

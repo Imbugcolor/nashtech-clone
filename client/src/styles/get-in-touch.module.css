@@ -1,0 +1,198 @@
+.getInTouch {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  z-index: 1000;
+  transition:  0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.modalContainer {
+  background-color: white;
+  width: 100%;
+  height: fit-content;
+  position: relative;
+  margin: 50px;
+}
+
+.modalContent {
+  display: flex;
+  height: fit-content;
+}
+
+.closeModal {
+  width: fit-content;
+  padding: 5px;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+.closeModal svg {
+  font-size: 28px;
+}
+
+.contactManual {
+  width: 40%;
+  min-width: 300px;
+  background-image: url(https://www.nashtechglobal.com/wp-content/uploads/2024/06/form_bg.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 70px 50px;
+  color: #fff;
+}
+
+.contactManual h4 {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.contactManual p {
+  font-size: 14px;
+  text-align: center;
+}
+
+.contactForm {
+  padding: 70px 50px;
+  background-color: #fff;
+  height: fit-content;
+  width: 100%;
+}
+
+.contactForm h4 {
+  margin-bottom: 15px;
+}
+
+.contactForm form input[type="text"],
+form textarea {
+  display: block;
+  background: #f5f6f8;
+  border-radius: 4px;
+  border: 0px;
+  margin-bottom: 15px;
+  padding: 20px 15px 5px !important;
+  font-size: 16px;
+  transition: 0.3s;
+  border-bottom: 2px solid transparent;
+  outline: none;
+  width: 100%;
+}
+
+.contactForm form input[type="text"] {
+  height: 50px;
+}
+
+.contactForm form textarea {
+  height: 100px;
+}
+
+.contactForm .inputGroup {
+  position: relative;
+}
+
+.contactForm .inputGroup .messageInput {
+    transform: translateY(0);
+    transition: all 0.2s ease-in-out;
+    pointer-events: none;
+    padding: 0;
+    line-height: 1;
+    position: absolute;
+    top: 0;
+    right: 5px;
+    font-size: 13px;
+    color: red;
+}
+
+.footerContactForm {
+  margin: 15px 0;
+}
+
+.footerContactForm label {
+  width: 60%;
+  align-items: flex-start;
+}
+
+.submitForm button {
+  font-size: 16px;
+  font-weight: 700;
+  background: rgba(226, 229, 231, 1);
+  color: rgba(159, 163, 170, 1);
+  border-color: rgba(226, 229, 231, 1);
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-radius: 0px 0px 0px 0px;
+  padding: 13px 32px 13px 32px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.contactForm button.active {
+  color: #ffffff;
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.contactForm button.loading {
+  background: rgba(226, 229, 231, 1);
+  color: rgba(159, 163, 170, 1);
+  border-color: rgba(226, 229, 231, 1);
+}
+
+.detailPolicy {
+  font-size: 12px;
+  text-align: center;
+}
+
+.policyAgree {
+  font-size: 14px;
+}
+
+
+@media (max-width: 768px) {
+  .modalContent {
+    flex-direction: column;
+  }
+
+  .contactManual {
+    width: 100%;
+    padding: 25px 25px 50px 25px;
+  }
+
+  .contactManual h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .contactForm {
+    padding: 30px 20px;
+  }
+
+  .closeModal svg {
+    color: #fff;
+  }
+
+  .submitForm button {
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .footerContactForm {
+    flex-direction: column;
+  }
+
+  .footerContactForm label {
+    width: 100%;
+  }
+  
+
+}

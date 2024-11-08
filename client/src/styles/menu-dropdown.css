@@ -1,0 +1,67 @@
+.solutions-background {
+    background-image: url('../images/our-solution-hero-sec-bg.jpg');
+    background-size: 850px 100%;
+    background-repeat: no-repeat;
+}
+
+.industries-background {
+    background-size: 850px 100%;
+    background-repeat: no-repeat;
+    background-image: url('../images/industries-hero-bg.jpg');
+}
+
+.ourthinking-background {
+    background-size: 850px 100%;
+    background-repeat: no-repeat;
+    background-image: url('../images/ourthinking.jpeg');
+}
+
+.aboutus-background {
+    background-size: 850px 100%;
+    background-repeat: no-repeat;
+    background-image: url('../images/hero_banner_4.jpg');
+}
+
+.menu-dropdown {
+  background-color: #fff;
+  border-top: solid 0.5px #ccc;
+}
+
+.menu-dropdown .left {
+    padding: 45px 20px 10px 0;
+    color: #fff;
+}
+
+.menu-dropdown .left .go-to-overview {
+    margin-top: 20px;
+}
+
+.menu-list-container {
+    padding: 20px 20px 0 20px;
+    background: #fff;
+}
+
+.menu-list li {
+  padding: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.menu-list li:hover {
+  background: linear-gradient(270deg, #d6001c, #6a1f7a) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent;
+  box-shadow: none !important;
+}
+
+.sub-menu-list {
+    list-style-type: square;
+}
+
+.sub-menu-list li {
+    padding: 15px;
+}
+
+.sub-menu-list li::marker {
+    color: var(--e-global-color-primary);
+}

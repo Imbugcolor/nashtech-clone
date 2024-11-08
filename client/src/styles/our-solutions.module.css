@@ -1,0 +1,101 @@
+.ourSolutions {
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+.headingTitle h3{
+    font-size: 48px;
+    text-align: center;
+    padding-bottom: 25px;
+}
+.solutionsListContainer {
+    margin-top: 45px;
+}
+.solutionItem {
+    position: relative;
+    min-height: 300px;
+    padding: 64px 24px 24px 24px;
+}
+.solutionItem::after {
+    content: "";
+    position: absolute;
+    width: calc(100% - 150px);
+    height: 1px;
+    background: #9FA3AA;
+    left: 60px;
+    top: 40px;
+    z-index: 9;
+    opacity: 1;
+}
+.solutionItemHeading {
+    font-size: 22px;
+    color: #9FA3AA;
+    position: absolute;
+    left: 25px;
+    top: 25px;
+}
+
+.arrow {
+    width: fit-content;
+    position: absolute;
+    top: 21px;
+    right: 50px;
+}
+
+.arrow svg {
+    font-size: 22px;
+    color: #fff;
+}
+
+.solutionItemBody {
+    display: flex;
+    margin-top: 15px;
+}
+
+.solutionItemBody .solutionItemImage {
+    padding-right: 20px;
+}
+
+.solutionItemBody .solutionItemImage img {
+    width: 100%;
+}
+
+.solutionItem a {
+    font-size: 28px;
+    transition: font-size 0.3s ease;
+    color: var(--e-global-color-astglobalcolor3);
+    font-weight: 700;
+}
+
+.solutionItemDescription {
+    display: none;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.solutionItem.active .solutionItemDescription {
+    display: block;
+}
+
+.solutionItem.active  .solutionItemImage {
+    display: none;
+}
+
+.solutionItem.active {
+    background-color: #0094D5;
+    color: #fff;
+}
+
+.solutionItem.active .solutionItemHeading {
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .headingTitle h3 {
+        font-size: 24px;
+    }
+
+    .solutionItem a {
+        font-size: 22px;
+    }
+}
